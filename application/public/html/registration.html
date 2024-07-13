@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration</title>
+  <link rel="stylesheet" href="../css/registration.css">
+  <script defer src="../js/validation.js"></script>
+</head>
+<body>
+  <header>
+  <h1>CSC 317 Registration</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">CLC</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="registration.html">Register</a></li>
+      <li><a href="postvideo.html">Post</a></li>
+      <li><a href="viewpost.html">View Post</a></li>
+    </ul>
+  </nav>
+</header>
+  <main>
+    <header> 
+      <h2>Registeration Form</h2>
+    </header>
+    <form action="/register/cc" method="REGISTER" id="registeration">
+
+        <div class="input-group">
+          <label for="username">Create a Username</label>
+          <input type="text" name="username" id="username" required>
+        </div>
+
+        <div class="username-rules" id="username-rules" style="display:none">
+          <p id="u1">Must be 3 or more characters</p>
+          <p id="u2">Must begin with a letter</p>
+        </div>
+
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required>    
+        </div>
+
+        <div class="input-group">
+          <label for="password">Create a Password</label>
+          <input type="password" name="password" id="password" required>      
+        </div>
+
+        <div class="password-rules" id="password-rules" style="display:none">
+          <p id="p1">Must be 8 or more characters</p>
+          <p id="p2">Must have at least one upper case and one special characters: /*-+!@#$^&~[]</p>
+        </div>
+        
+        <div class="input-group">
+          <label for="password">Confirm the Password</label>
+          <input type="password" name="password" id="confirmpass" required>   
+        </div>
+
+        <div class="checkbox-group">
+          <input type="checkbox" id="Over 13+" name="Over 13+" value="Over13" id="age" required>
+          <label for="Over 13+">Are you over 13+?</label>
+        </div>
+        
+        <div class="checkbox-group">
+          <input type="checkbox" id="tos" name="tos" value="tos" id="tos" required>
+          <label for="Over 13+">Do you accept the <a href="tos.html">Terms Of Service</a> and <a href="pr.html">Privacy Rules</a>?</label>
+        </div>
+
+          <div class="button-group">
+          <button type="register">Submit</button>
+          <button type="reset">Reset</button>
+        </div>
+    </form>
+  </main>
+</body>
+</html>
